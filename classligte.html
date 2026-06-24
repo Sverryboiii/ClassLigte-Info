@@ -8,15 +8,33 @@
     </p>
 
     <p>
-        Contents:
+        Contents:<br>
         <a href="#Introduction"> - Introduction</a><br>
         <a href="#change_world_version"> - How to change your world version</a>
+        <a href="#Worlds"> - Worlds</a>
     </p>
 
     <div id="Introduction">
         <h3>|| Introduction</h3>
-        Class Ligte is a roguelite game where you collect items and slay monsters and bosses, but the core mechanic of Class
-        Ligte is the exploration.
+        Class Ligte is a roguelite game where you collect items and slay monsters and bosses,
+        but the core mechanic of Class
+        Ligte is the exploration.<br>
+        The exploration is done through a series of worlds. each worlds provides you with new items and one more skill.
+        <br>
+        These skills can be all the way from fishing to taming.
+    </div>
+    <div id="Worlds">
+        <h3>Worlds</h3>
+        <p>
+            In ClassLigte you are greeted with the world system.<br>
+            Every world takes a total of 2000 tiles except for the last world which goes on forever.<br>
+            Every world also introduces a new skill. Most of the time you will be able to craft a tool 
+            for that skill in the previous world. For example: You can craft a pickaxe at world 2, 
+            only at world 3 this pickaxe will be used.
+        </p>
+        <p>
+            
+        </p>
     </div>
     <div id="change_world_version">
         <h3>|| How to change your world version</h3>
@@ -27,12 +45,26 @@
             Now how to change your world version:<br>
             When a world is opened in the wrong version it will give a message like the one below:<br>
             World is not in version [Your current world version], while it must be in version '[Required version]'.<br>
-            To change your world version you need to go to your appdata folder (or .config folder on Linux) and locate the "ClassLigte-Sverryboiii" folder. In there lies all the game data.<br>
-            In there you go to the "worlds" folder and open the world folder you want to upgrade. After that locate the JSON file named "config_data" and open it in notepad (or whatever text editor you use)<br>
-            Now that you're in the JSON file you need to locate the "version" tag and change the value of that tag to the required version.
+            To change your world version you need to go to your appdata folder (or .config folder on Linux) 
+            and locate the "ClassLigte-Sverryboiii" folder. In there lies all the game data.<br>
+            In there you go to the "worlds" folder and open the world folder you want to upgrade. 
+            After that locate the JSON file named "config_data" and open it in notepad 
+            (or whatever text editor you use)<br> 
+            Now that you're in the JSON file you need to locate the "version" 
+            tag and change the value of that tag to the required version.<br>
+            (Downgrading works the same, but is considdered more dangerous!)
         </p>
         <p>
             After that you have upgraded your game!
+        </p>
+        <p>
+            Things that will and wont change when upgrading / downgrading a world:<br>
+            If the version you changed your world to has more worlds than your old world they will be automatically
+            added. Only the tiles changed by you or structures (anything that isn't terrain, so trees too) will stay, 
+            because these are considdered "important" to the player.
+            When downgrading biomes that dont exist in that version will be converted to biomes that do exist.<br>
+            When upgrading you will keep all your items, but when downgrading your items may get lost.<br>
+            But the advice is to never change a world's version unless you really know what you're doing.
         </p>
     </div>
 </div>
