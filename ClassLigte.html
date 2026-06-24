@@ -12,8 +12,21 @@
   Class Ligte is a roguelite game where you collect items and slay monsters and bosses, but the core mechanic of Class
   Ligte is the exploration.
  </p>
- <p id="change_world_version">
+ <div id="change_world_version">
   <h3>|| How to change your world version</h3>
-  Before changing your world version you must 
- </p>
+  <p>
+   Before changing your world version you should always create a backup. Upgrading a world to a newer version can corrupt data and make your world unplayable.
+  </p>
+  <p>
+   Now how to change your world version:<br>
+   When a world is opened in the wrong version it will give a message like the one below:<br>
+   World is not in version [Your current world version], while it must be in version '[Required version]'.<br>
+   To change your world version you need to go to your appdata folder (or .config folder on Linux) and locate the "ClassLigte-Sverryboiii" folder. In there lies all the game data.<br>
+   In there you go to the "worlds" folder and open the world folder you want to upgrade. After that locate the JSON file named "config_data" and open it in notepad (or whatever text editor you use)<br>
+   Now that you're in the JSON file you need to locate the "version" tag and change the value of that tag to the required version.
+  </p>
+  <p>
+   After that you have upgraded your game!
+  </p>
+ </div>
 </div>
