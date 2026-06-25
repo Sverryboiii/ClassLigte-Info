@@ -9,6 +9,22 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
+a:link {
+    color: rgb(0, 255, 255);
+}
+
+a:visited {
+    color: rgb(0, 200, 200);
+}
+
+a:hover {
+    color: rgb(0, 150, 255);
+}
+
+a:active {
+    color: rgb(0, 255, 150);
+}
+
 div {
     background-color: rgb(39, 39, 39);
 }
